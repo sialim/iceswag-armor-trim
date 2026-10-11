@@ -1,0 +1,43 @@
+trim:
+  enabled: true
+  count-clear: true
+daily-reset:
+  timezone: UTC
+flight:
+  enabled: true
+  expiry-fall-protection-seconds: 15
+  warning-seconds: [300, 60, 10, 5]
+messages:
+  command-feedback: false
+  flight-warning: '{time} of flight remaining.'
+ranks:
+  member:
+    permission: armortrim.rank.member
+    priority: 0
+    trim-uses: 0
+    fly-seconds: 0
+  farmer:
+    permission: armortrim.rank.farmer
+    priority: 10
+    trim-uses: 4
+    fly-seconds: 1200
+  specialist:
+    permission: armortrim.rank.specialist
+    priority: 20
+    trim-uses: 6
+    fly-seconds: 1800
+  knight:
+    permission: armortrim.rank.knight
+    priority: 30
+    trim-uses: 12
+    fly-seconds: 2400
+  lord:
+    permission: armortrim.rank.lord
+    priority: 40
+    trim-uses: 32
+    fly-seconds: 7200
+  monarch:
+    permission: armortrim.rank.monarch
+    priority: 50
+    trim-uses: -1
+    fly-seconds: -1

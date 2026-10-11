@@ -1,0 +1,41 @@
+name: ArmorTrim
+version: '${version}'
+main: net.serverplugins.trim.ArmorTrimPlugin
+api-version: '1.21.11'
+description: Apply or clear armor trims from the item in your main hand.
+softdepend: [Essentials]
+commands:
+  trim:
+    description: Apply or clear an armor trim.
+    usage: /trim <pattern> <material> | /trim clear
+  trimadmin:
+    description: Inspect or manage trim and flight allowances.
+    usage: /trimadmin reload | status [player] | resettrim <player> | resetfly <player>
+  flighttime:
+    description: Show your remaining daily flight allowance.
+    usage: /flighttime
+permissions:
+  armortrim.use:
+    description: Allows applying and clearing armor trims.
+    default: false
+  armortrim.admin:
+    description: Manage trim and flight allowances.
+    default: op
+  armortrim.trim.unlimited:
+    description: Bypass the daily trim allowance.
+    default: false
+  armortrim.fly.unlimited:
+    description: Bypass the daily flight allowance.
+    default: false
+  armortrim.rank.member:
+    default: false
+  armortrim.rank.farmer:
+    default: false
+  armortrim.rank.specialist:
+    default: false
+  armortrim.rank.knight:
+    default: false
+  armortrim.rank.lord:
+    default: false
+  armortrim.rank.monarch:
+    default: false
